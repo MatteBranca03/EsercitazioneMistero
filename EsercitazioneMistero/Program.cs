@@ -1,4 +1,5 @@
 ﻿using System;
+using ClassLibrary1;
 
 namespace EsercitazioneMistero
 {
@@ -6,7 +7,13 @@ namespace EsercitazioneMistero
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("inserisci un numero");
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine("inserisci un numero");
+            int y = int.Parse(Console.ReadLine());
+            double risultato = Class1.Mistero3(x, y);
+            Console.WriteLine($"il risultato è {risultato}");
+            Console.ReadLine();
         }
     }
 }

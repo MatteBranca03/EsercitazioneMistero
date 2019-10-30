@@ -4,7 +4,6 @@ namespace ClassLibrary1
 {
     public class Class1
     {
-        // si tratta della somma
         public static int Mistero1(int x, int y)
         {
             int prec;
@@ -14,7 +13,6 @@ namespace ClassLibrary1
                 prec = Mistero1(x, y - 1) + 1;
             return prec;
         }
-        // si tratta della moltiplicazione
         public static int Mistero2(int x, int y)
         {
             if (y == 0)
@@ -34,8 +32,7 @@ namespace ClassLibrary1
             if (n == 0)
                 return 1;
             return n * Fattoriale(n - 1);
-        }
-        // si tratta di divisione 
+        } 
         public static string Mistero4(long n)
         {
             Console.Write(n % 10);
@@ -83,6 +80,3 @@ namespace ClassLibrary1
         }
     }
 }
-
-
-
